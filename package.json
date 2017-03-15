@@ -1,0 +1,7 @@
+{
+  "name": "mobilecgn-alexa-skill",
+  "description": "mobile.cologne meetup alexa skill",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT"
+}
