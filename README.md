@@ -1,2 +1,34 @@
-# [mobilecgn](http://www.mobilecologne.de) [alexa-skill](https://developer.amazon.com/alexa-skills-kit/)
+# [mobilecgn](http://www.mobilecologne.de) 🖲 [alexa-skill](https://developer.amazon.com/alexa-skills-kit/)
 
+## About the skill
+
+*   Ask the skill when the last/next meetup is. (Currently in German only.)
+
+## About the tech setup
+
+*   This project requires [Node.js](https://nodejs.org/)
+*   It is also recommended to install [Yarn](https://yarnpkg.com/)
+*   Because AWS lambda uses Node 4.3 we use [Neutrino](https://neutrino.js.org/)
+    with the node preset to 'transpile' the JavaScript with
+    [Babel](http://babeljs.io/) to an compatible version.
+*   TODO: Testing with Mocha or Jest.
+*   We use [ESLint](http://eslint.org/) as linter with the
+    [Airbnb](https://github.com/airbnb/javascript) guideline preset.
+
+## Setup
+
+### Preparation
+
+*   Create an [Amazon Developer account](https://developer.amazon.com/)
+*   Create an [AWS account](https://aws.amazon.com/)
+*   Create a [Meetup API key](https://secure.meetup.com/meetup_api/key/)
+
+### Build the sourcecode
+
+*   git clone...
+*   `make`
+
+### Uplooad and configure your skill
+
+*   Create an AWS lambda function
+*   Create an Amazon Alexa Skill
