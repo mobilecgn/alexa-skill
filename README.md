@@ -32,3 +32,6 @@
 
 *   Create an AWS lambda function
 *   Create an Amazon Alexa Skill
+    *   Define the env variable `MEETUP_ACCESS_KEY` with your Meetup API key.
+    *   Define the env variable `MEETUP_GROUP_ID` with your Meetup group ID,
+        which means the string-identifier from the URL, not the internal ID.
