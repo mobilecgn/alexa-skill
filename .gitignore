@@ -1,5 +1,6 @@
 # Customized
 /build
+/build.zip
 
 # Created by https://www.gitignore.io/api/node,osx
 
@@ -93,4 +94,3 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/node,osx
-
