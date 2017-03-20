@@ -43,13 +43,21 @@ NextMeetup wo findet das nächste Event statt
 NextMeetup wo findet das nächste Meetup statt
 NextMeetup wo findet das kommende Event statt
 NextMeetup wo findet das kommende Meetup statt
+NextMeetup wann das nächste Event ist
 NextMeetup wann das nächste Event stattfindet
+NextMeetup wann das nächste Meetup ist
 NextMeetup wann das nächste Meetup stattfindet
+NextMeetup wann das kommende Event ist
 NextMeetup wann das kommende Event stattfindet
+NextMeetup wann das kommende Meetup ist
 NextMeetup wann das kommende Meetup stattfindet
+NextMeetup wo das nächste Event ist
 NextMeetup wo das nächste Event stattfindet
+NextMeetup wo das nächste Meetup ist
 NextMeetup wo das nächste Meetup stattfindet
+NextMeetup wo das kommende Event ist
 NextMeetup wo das kommende Event stattfindet
+NextMeetup wo das kommende Meetup ist
 NextMeetup wo das kommende Meetup stattfindet
 NextMeetup das nächste Event
 NextMeetup das nächste Meetup
@@ -65,6 +73,8 @@ NextMeetup nach dem kommendem Event
 NextMeetup nach dem kommendem Meetup
 NextMeetup mir Details
 NextMeetup mir Infos
+NextMeetup nach Details
+NextMeetup nach Infos
 NextMeetup mir Details zum nächstem Event
 NextMeetup mir Details zum nächstem Meetup
 NextMeetup mir Details zum kommendem Event
@@ -79,7 +89,7 @@ NextMeetup was kommt als nächstes
 NextMeetup was kommt als nächstes Event
 NextMeetup was kommt als nächstes Meetup
 NextMeetup erzähl mir was
-NextMeetup erzähl mir vom nächste Event
-NextMeetup erzähl mir vom nächste Meetup
-NextMeetup erzähl mir vom kommende Event
-NextMeetup erzähl mir vom kommende Meetup
+NextMeetup erzähl mir vom nächstem Event
+NextMeetup erzähl mir vom nächstem Meetup
+NextMeetup erzähl mir vom kommendem Event
+NextMeetup erzähl mir vom kommendem Meetup

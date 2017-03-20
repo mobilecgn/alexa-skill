@@ -5,14 +5,14 @@ NextMeetup das (letzte|vorherige) (Event|Meetup)
 
 NextMeetup (wann|wo) ist das (nächste|kommende) (Event|Meetup)
 NextMeetup (wann|wo) findet das (nächste|kommende) (Event|Meetup) statt
-NextMeetup (wann|wo) das (nächste|kommende) (Event|Meetup) stattfindet
+NextMeetup (wann|wo) das (nächste|kommende) (Event|Meetup) (ist|stattfindet)
 NextMeetup (das|mir ein) (nächste|kommende) (Event|Meetup)
 NextMeetup nach dem (nächstem|kommendem) (Event|Meetup)
-NextMeetup mir (Details|Infos)
+NextMeetup (mir|nach) (Details|Infos)
 NextMeetup mir (Details|Infos) zum (nächstem|kommendem) (Event|Meetup)
 NextMeetup mir ein (Event|Meetup)
 NextMeetup was kommt als nächstes
 NextMeetup was kommt als nächstes (Event|Meetup)
 
 NextMeetup erzähl mir was
-NextMeetup erzähl mir vom (nächste|kommende) (Event|Meetup)
+NextMeetup erzähl mir vom (nächstem|kommendem) (Event|Meetup)
