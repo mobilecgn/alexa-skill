@@ -18,15 +18,15 @@ LastMeetup wo das letzte Event war
 LastMeetup wo das letzte Meetup war
 LastMeetup wo das vorherige Event war
 LastMeetup wo das vorherige Meetup war
+LastMeetup das letzte Event
+LastMeetup das letzte Meetup
+LastMeetup das vorherige Event
+LastMeetup das vorherige Meetup
+LastMeetup das letzte Event
+LastMeetup das letzte Meetup
+LastMeetup das vorherige Event
+LastMeetup das vorherige Meetup
 
-NextMeetup das letzte Event
-NextMeetup das letzte Meetup
-NextMeetup das vorherige Event
-NextMeetup das vorherige Meetup
-NextMeetup das letzte Event
-NextMeetup das letzte Meetup
-NextMeetup das vorherige Event
-NextMeetup das vorherige Meetup
 NextMeetup wann ist das nächste Event
 NextMeetup wann ist das nächste Meetup
 NextMeetup wann ist das kommende Event

@@ -1,7 +1,7 @@
 LastMeetup (wann|wo) fand das (letzte|vorherige) (Event|Meetup) statt
 LastMeetup (wann|wo) das (letzte|vorherige) (Event|Meetup) war
-NextMeetup das (letzte|vorherige) (Event|Meetup)
-NextMeetup das (letzte|vorherige) (Event|Meetup)
+LastMeetup das (letzte|vorherige) (Event|Meetup)
+LastMeetup das (letzte|vorherige) (Event|Meetup)
 
 NextMeetup (wann|wo) ist das (nächste|kommende) (Event|Meetup)
 NextMeetup (wann|wo) findet das (nächste|kommende) (Event|Meetup) statt
