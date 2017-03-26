@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "neutrino start --presets neutrino-preset-node",
-    "build": "neutrino build --presets neutrino-preset-node",
-    "test": "neutrino test --presets neutrino-preset-node neutrino-preset-jest",
+    "start": "neutrino start --use neutrino-preset-node",
+    "build": "neutrino build --use neutrino-preset-node",
+    "test": "neutrino test --use neutrino-preset-node neutrino-preset-jest",
     "mocha": "mocha --require babel-register --recursive test",
     "jest": "jest",
     "lint": "eslint src test interaction-model",
@@ -17,11 +17,12 @@
   "dependencies": {
     "alexa-sdk": "^1.0.7",
     "aws-sdk": "^2.28.0",
+    "debug": "^2.6.3",
     "meetup-api": "^1.4.9"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
-    "babel-eslint": "7.1.1",
+    "babel-eslint": "7.2.1",
     "babel-jest": "^19.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-latest": "^6.24.0",
@@ -34,9 +35,9 @@
     "jest": "^19.0.2",
     "lodash": "^4.17.4",
     "mocha": "^3.2.0",
-    "neutrino": "^4.3.1",
-    "neutrino-preset-jest": "^4.3.0",
-    "neutrino-preset-mocha": "^4.2.0",
-    "neutrino-preset-node": "^4.2.2"
+    "neutrino": "^5.0.0",
+    "neutrino-preset-jest": "^5.0.0",
+    "neutrino-preset-mocha": "^5.0.0",
+    "neutrino-preset-node": "^5.0.0"
   }
 }
