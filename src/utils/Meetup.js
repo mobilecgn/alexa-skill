@@ -37,7 +37,7 @@ export default class Meetup {
     }).then(response => response.results);
   }
 
-  getUpcomingEvent(group) {
+  getUpcomingEvents(group) {
     return this.getEvents({
       group_urlname: group,
       status: 'upcoming',

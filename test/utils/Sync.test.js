@@ -1,5 +1,5 @@
 
-import Sync from '../src/Sync';
+import Sync from '../../src/utils/Sync';
 
 describe('Sync', () => {
   test('convertObjectToItem result', () => {

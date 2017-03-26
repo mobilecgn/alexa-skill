@@ -68,13 +68,41 @@ ajv@^4.7.0, ajv@^4.9.1:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
 
-alexa-sdk@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/alexa-sdk/-/alexa-sdk-1.0.7.tgz#3c5d8cad925551e50e489f30ac9b1aff9a4d28bb"
+alexa-app-router@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/alexa-app-router/-/alexa-app-router-0.0.2.tgz#2e617d768da2fef7c1836a14f17c144270004d8d"
+
+alexa-app@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/alexa-app/-/alexa-app-4.0.0.tgz#9b74cc6e86dd6728ca6f1fa4b25a1bb397896283"
   dependencies:
-    aws-sdk "^2.4.7"
-    i18next "^3.4.1"
-    i18next-sprintf-postprocessor "^0.2.2"
+    alexa-utterances "^0.2.0"
+    alexa-verifier-middleware "^0.2.1"
+    bluebird "^2.10.2"
+    body-parser "^1.15.2"
+    lodash.defaults "^4.2.0"
+    numbered "^1.0.0"
+
+alexa-utterances@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/alexa-utterances/-/alexa-utterances-0.2.1.tgz#f2b70b6afd3ad886711da8f994e7e49549e60bf1"
+  dependencies:
+    js-combinatorics "^0.5.0"
+    numbered "^1.0.0"
+
+alexa-verifier-middleware@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/alexa-verifier-middleware/-/alexa-verifier-middleware-0.2.1.tgz#848f8aac2916006345b846be7eed9f2056b6e585"
+  dependencies:
+    alexa-verifier "^0.3.0"
+
+alexa-verifier@^0.3.0:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/alexa-verifier/-/alexa-verifier-0.3.3.tgz#3d22ac654b9e6114b01f7f3456df21876a31381f"
+  dependencies:
+    node-forge "^0.7.0"
+    request "^2.67.0"
+    validator "^7.0.0"
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
@@ -259,7 +287,7 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-aws-sdk@^2.28.0, aws-sdk@^2.4.7:
+aws-sdk@^2.28.0:
   version "2.32.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.32.0.tgz#9fe278b2ec1b12fddd1afeb74439581cdc2e5990"
   dependencies:
@@ -925,6 +953,21 @@ bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
   version "4.11.6"
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.6.tgz#53344adb14617a13f6e8dd2ce28905d1c0ba3215"
 
+body-parser@^1.15.2:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/body-parser/-/body-parser-1.17.1.tgz#75b3bc98ddd6e7e0d8ffe750dfaca5c66993fa47"
+  dependencies:
+    bytes "2.4.0"
+    content-type "~1.0.2"
+    debug "2.6.1"
+    depd "~1.1.0"
+    http-errors "~1.6.1"
+    iconv-lite "0.4.15"
+    on-finished "~2.3.0"
+    qs "6.4.0"
+    raw-body "~2.2.0"
+    type-is "~1.6.14"
+
 boom@2.x.x:
   version "2.10.1"
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
@@ -1061,6 +1104,10 @@ builtin-status-codes@^3.0.0:
 bytes@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.3.0.tgz#d5b680a165b6201739acb611542aabc2d8ceb070"
+
+bytes@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.4.0.tgz#7d97196f9d5baf7f6935e25985549edd2a6c2339"
 
 caller-path@^0.1.0:
   version "0.1.0"
@@ -2594,17 +2641,13 @@ https-proxy-agent@1:
     debug "2"
     extend "3"
 
-i18next-sprintf-postprocessor@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/i18next-sprintf-postprocessor/-/i18next-sprintf-postprocessor-0.2.2.tgz#2e409f1043579382698b6a2da70cdaa551d67ea4"
-
-i18next@^3.4.1:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-3.5.2.tgz#930390d5c318ceaa4858b52dd0e40e6b203f9f41"
-
-iconv-lite@0.4.13, iconv-lite@^0.4.5:
+iconv-lite@0.4.13:
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.13.tgz#1f88aba4ab0b1508e8312acc39345f36e992e2f2"
+
+iconv-lite@0.4.15, iconv-lite@^0.4.5:
+  version "0.4.15"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
 
 ieee754@^1.1.4:
   version "1.1.8"
@@ -2677,16 +2720,6 @@ inquirer@^0.12.0:
 inspect-f@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/inspect-f/-/inspect-f-1.2.1.tgz#117573b5df57a509de6fe401131d426bac1592b5"
-
-intent-utterance-expander@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/intent-utterance-expander/-/intent-utterance-expander-0.0.4.tgz#ff6d99202efeb68978d65d358e040771460103a2"
-
-intent-utterance-generator@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/intent-utterance-generator/-/intent-utterance-generator-0.0.2.tgz#9724ab383f3739f73678920a91c94fe7c1a51708"
-  dependencies:
-    intent-utterance-expander "0.0.4"
 
 interpret@^1.0.0:
   version "1.0.1"
@@ -3185,6 +3218,10 @@ jodid25519@^1.0.0:
   dependencies:
     jsbn "~0.1.0"
 
+js-combinatorics@^0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/js-combinatorics/-/js-combinatorics-0.5.2.tgz#f060749232ea1b770076ff97aed6cfa9ab41b8f4"
+
 js-tokens@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.1.tgz#08e9f132484a2c45a30907e9dc4d5567b7f114d7"
@@ -3401,6 +3438,10 @@ lodash.create@3.1.1:
     lodash._basecreate "^3.0.0"
     lodash._isiterateecall "^3.0.0"
 
+lodash.defaults@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
+
 lodash.isarguments@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
@@ -3417,7 +3458,7 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0:
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.2.0, lodash@^4.3.0:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3749,6 +3790,10 @@ node-dir@^0.1.10:
   dependencies:
     minimatch "^3.0.2"
 
+node-forge@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.0.tgz#5e0782a44e5e093fae3676d59f84ecfb38a4baad"
+
 node-int64@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/node-int64/-/node-int64-0.4.0.tgz#87a9065cdb355d3182d8f94ce11188b825c68a3b"
@@ -3836,6 +3881,10 @@ npmlog@^4.0.2:
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
+
+numbered@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/numbered/-/numbered-1.0.0.tgz#45a40f728c8860101244bd008c3cab6ee9fa08ec"
 
 "nwmatcher@>= 1.3.9 < 2.0.0":
   version "1.3.9"
@@ -4288,6 +4337,14 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
+raw-body@~2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.2.0.tgz#994976cf6a5096a41162840492f0bdc5d6e7fb96"
+  dependencies:
+    bytes "2.4.0"
+    iconv-lite "0.4.15"
+    unpipe "1.0.0"
+
 rc@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.1.7.tgz#c5ea564bb07aff9fd3a5b32e906c1d3a65940fea"
@@ -4445,7 +4502,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@^2.79.0, request@^2.81.0:
+request@^2.67.0, request@^2.79.0, request@^2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
@@ -5149,7 +5206,7 @@ ultron@1.0.x:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
 
-unpipe@~1.0.0:
+unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
 
@@ -5235,6 +5292,10 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "~1.0.0"
     spdx-expression-parse "~1.0.0"
+
+validator@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-7.0.0.tgz#c74deb8063512fac35547938e6f0b1504a282fd2"
 
 vary@~1.1.0:
   version "1.1.1"
