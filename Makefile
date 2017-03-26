@@ -6,4 +6,3 @@ build:
 	cp -v package.json build/package.json
 	cd build && yarn install --production
 	cd build && zip -r ../build.zip .
-	cd build && yarn list
