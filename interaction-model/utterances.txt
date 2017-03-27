@@ -10,6 +10,14 @@ LastMeetup wann fand das letzte Meetup statt
 LastMeetup wo fand das letzte Meetup statt
 LastMeetup wann fand das vorherige Meetup statt
 LastMeetup wo fand das vorherige Meetup statt
+LastMeetup wann war das letzte Event
+LastMeetup wo war das letzte Event
+LastMeetup wann war das vorherige Event
+LastMeetup wo war das vorherige Event
+LastMeetup wann war das letzte Meetup
+LastMeetup wo war das letzte Meetup
+LastMeetup wann war das vorherige Meetup
+LastMeetup wo war das vorherige Meetup
 LastMeetup wann das letzte Event war
 LastMeetup wo das letzte Event war
 LastMeetup wann das vorherige Event war
@@ -22,18 +30,6 @@ LastMeetup das letzte Event
 LastMeetup das vorherige Event
 LastMeetup das letzte Meetup
 LastMeetup das vorherige Meetup
-LastMeetup das letzte Event
-LastMeetup das vorherige Event
-LastMeetup das letzte Meetup
-LastMeetup das vorherige Meetup
-NextMeetup wann ist das nächste Event
-NextMeetup wo ist das nächste Event
-NextMeetup wann ist das kommende Event
-NextMeetup wo ist das kommende Event
-NextMeetup wann ist das nächste Meetup
-NextMeetup wo ist das nächste Meetup
-NextMeetup wann ist das kommende Meetup
-NextMeetup wo ist das kommende Meetup
 NextMeetup wann findet das nächste Event statt
 NextMeetup wo findet das nächste Event statt
 NextMeetup wann findet das kommende Event statt
@@ -42,6 +38,14 @@ NextMeetup wann findet das nächste Meetup statt
 NextMeetup wo findet das nächste Meetup statt
 NextMeetup wann findet das kommende Meetup statt
 NextMeetup wo findet das kommende Meetup statt
+NextMeetup wann ist das nächste Event
+NextMeetup wo ist das nächste Event
+NextMeetup wann ist das kommende Event
+NextMeetup wo ist das kommende Event
+NextMeetup wann ist das nächste Meetup
+NextMeetup wo ist das nächste Meetup
+NextMeetup wann ist das kommende Meetup
+NextMeetup wo ist das kommende Meetup
 NextMeetup wann das nächste Event ist
 NextMeetup wo das nächste Event ist
 NextMeetup wann das kommende Event ist
