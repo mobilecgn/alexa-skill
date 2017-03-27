@@ -5,6 +5,7 @@ import { addRouter } from 'alexa-app-router';
 import config from './config';
 import intents from './intents';
 import routes from './routes';
+import NextMeetup from './handler/NextMeetup';
 
 const app = new App('mobile cologne');
 
@@ -13,9 +14,7 @@ const error = 'Leider haben wir gerade technische Probleme. Probier es bitte spÃ
 app.messages.GENERIC_ERROR = error;
 app.messages.NO_INTENT_FOUND = error;
 
-app.launch((request, response) => {
-  response.say('Hallo');
-});
+app.launch(NextMeetup);
 
 addRouter(app, config, intents, routes);
 
