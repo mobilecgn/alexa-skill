@@ -23,37 +23,37 @@ describe('Speech', () => {
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 1, 12, 0, 0))).toEqual('Donnerstag um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 1, 12, 0, 0))).toEqual('Donnerstag um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 4, 12, 0, 0))).toEqual('Donnerstag um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 4, 12, 0, 0))).toEqual('Donnerstag um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 5, 12, 0, 0))).toEqual('morgen um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 5, 12, 0, 0))).toEqual('morgen um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 6, 12, 0, 0))).toEqual('heute um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 6, 12, 0, 0))).toEqual('heute um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 7, 12, 0, 0))).toEqual('gestern um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 7, 12, 0, 0))).toEqual('gestern um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 8, 12, 0, 0))).toEqual('letzten Donnerstag um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 8, 12, 0, 0))).toEqual('letzten Donnerstag um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr
       utc_offset: 7200000,
-    }, new Date(2017, 3 /* April */, 9, 12, 0, 0))).toEqual('letzten Donnerstag um 21:00 Uhr');
+    }, new Date(2017, 3 /* April */, 9, 12, 0, 0))).toEqual('letzten Donnerstag um 19:00 Uhr');
 
     expect(generateEventStart({
       time: 1491498000000, // 06.04.2017 - 19 Uhr

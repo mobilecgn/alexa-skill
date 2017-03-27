@@ -25,15 +25,14 @@ export function generateEventStart(event, referenceTime) {
     return '';
   }
 
-  const start = new Date(event.time + event.utc_offset);
-  const calendar = moment(start);
+  const calendar = moment(event.time);
   if (!calendar.isValid()) {
     return '';
   }
 
-  let string = calendar.calendar(referenceTime);
-  if (string.length <= 10) {
-    string = `am ${string}`;
+  let start = calendar.calendar(referenceTime);
+  if (start.length <= 10) {
+    start = `am ${start}`;
   }
-  return string;
+  return start;
 }
