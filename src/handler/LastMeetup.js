@@ -18,7 +18,7 @@ export default async function LastMeetup(request, response) {
       const start = generateEventStart(events[0]);
 
       response
-        .say(`Das letzte Meetup war ${title} ${start}`)
+        .say(`Das letzte <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> war ${title} ${start}`)
         .card({
           type: 'Simple',
           title: 'Letzte Meetup',
@@ -26,7 +26,7 @@ export default async function LastMeetup(request, response) {
         })
         .send();
     } else {
-      response.say('Mir ist leider kein vergangenes Meetup bekannt.');
+      response.say('Mir ist leider kein vergangenes <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> bekannt.');
     }
   } catch (e) {
     console.log('Exception:', e);

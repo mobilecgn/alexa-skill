@@ -18,7 +18,7 @@ export default async function NextMeetup(request, response) {
       const start = generateEventStart(events[0]);
 
       response
-        .say(`Das nächste Meetup ist ${title} ${start}`)
+        .say(`Das nächste <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> ist ${title} ${start}`)
         .card({
           type: 'Simple',
           title: 'Nächstes Meetup',
@@ -26,7 +26,7 @@ export default async function NextMeetup(request, response) {
         })
         .send();
     } else {
-      response.say('Mir ist leider kein nächstes Meetup bekannt.');
+      response.say('Mir ist leider kein nächstes <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> bekannt.');
     }
   } catch (e) {
     console.log('Exception:', e);
