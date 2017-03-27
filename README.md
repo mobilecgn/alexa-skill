@@ -8,10 +8,10 @@
 
 *   This project requires [Node.js](https://nodejs.org/)
 *   It is also recommended to install [Yarn](https://yarnpkg.com/)
-*   Because AWS lambda uses Node 4.3 we use [Neutrino](https://neutrino.js.org/)
+*   Because AWS lambda uses Node 6.10 we use [Neutrino](https://neutrino.js.org/)
     with the node preset to 'transpile' the JavaScript with
     [Babel](http://babeljs.io/) to an compatible version.
-*   TODO: Testing with Mocha or Jest.
+*   Tests are written in Jest.
 *   We use [ESLint](http://eslint.org/) as linter with the
     [Airbnb](https://github.com/airbnb/javascript) guideline preset.
 
@@ -25,10 +25,10 @@
 
 ### Build the sourcecode
 
-*   git clone...
+*   `https://github.com/mobilecgn/alexa-skill.git`
 *   `make`
 
-### Uplooad and configure your skill
+### Upload and configure your skill
 
 *   Create an AWS lambda function
 *   Create an Amazon Alexa Skill
