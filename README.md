@@ -1,4 +1,4 @@
-# [mobilecgn](http://www.mobilecologne.de) 🖲 [alexa-skill](https://developer.amazon.com/alexa-skills-kit/)
+# 🖲 [alexa-skill](https://developer.amazon.com/alexa-skills-kit/) for the [mobile.cologne](http://www.mobilecologne.de) meetup
 
 ## About the skill
 
@@ -8,10 +8,10 @@
 
 *   This project requires [Node.js](https://nodejs.org/)
 *   It is also recommended to install [Yarn](https://yarnpkg.com/)
-*   Because AWS lambda uses Node 6.10 we use [Neutrino](https://neutrino.js.org/)
-    with the node preset to 'transpile' the JavaScript with
-    [Babel](http://babeljs.io/) to an compatible version.
-*   Tests are written in Jest.
+*   It uses [Neutrino](https://neutrino.js.org/) and
+    [Babel](http://babeljs.io/) to 'transpile' latest ES6 JavaScript into
+    Node 6.10 (latest lambda node version) JavaScript.
+*   Tests are written in  [Jest](https://facebook.github.io/jest/).
 *   We use [ESLint](http://eslint.org/) as linter with the
     [Airbnb](https://github.com/airbnb/javascript) guideline preset.
 
@@ -26,7 +26,7 @@
 ### Build the sourcecode
 
 *   `https://github.com/mobilecgn/alexa-skill.git`
-*   `make`
+*   `make` (which run `yarn run build` and package a ZIP file for lambda)
 
 ### Upload and configure your skill
 
