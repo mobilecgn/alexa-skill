@@ -16,8 +16,10 @@
     "alexa-app": "^4.0.0",
     "alexa-app-router": "^0.0.2",
     "aws-sdk": "^2.28.0",
+    "babel-polyfill": "^6.23.0",
     "debug": "^2.6.3",
-    "meetup-api": "^1.4.9"
+    "meetup-api": "^1.4.9",
+    "moment": "^2.18.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
