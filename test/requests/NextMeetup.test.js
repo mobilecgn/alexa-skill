@@ -36,12 +36,12 @@ describe('launch intent', () => {
       response: {
         outputSpeech: {
           type: 'SSML',
-          ssml: '<speak>Das nächste Meetup ist - Stammtisch am 06.04.2017</speak>',
+          ssml: '<speak>Das nächste <phoneme alphabet=\"ipa\" ph=\"miːt ʌp\">Meetup</phoneme> ist - Stammtisch Donnerstag um 19:00 Uhr</speak>',
         },
         card: {
           type: 'Simple',
           title: 'Nächstes Meetup',
-          content: 'Das nächste Meetup ist - Stammtisch am 06.04.2017',
+          content: 'Das nächste Meetup ist - Stammtisch Donnerstag um 19:00 Uhr',
         },
         directives: [],
         shouldEndSession: true,

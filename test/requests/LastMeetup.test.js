@@ -36,7 +36,7 @@ describe('LastMeetup', () => {
       response: {
         outputSpeech: {
           type: 'SSML',
-          ssml: '<speak>Das letzte Meetup war Vortragsabend: TensorFlow und TensorFlow Mobile am 09.03.2017</speak>',
+          ssml: '<speak>Das letzte <phoneme alphabet=\"ipa\" ph=\"miːt ʌp\">Meetup</phoneme> war Vortragsabend: TensorFlow und TensorFlow Mobile am 09.03.2017</speak>',
         },
         card: {
           type: 'Simple',

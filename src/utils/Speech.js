@@ -25,7 +25,7 @@ export function generateEventStart(event, referenceTime) {
     return '';
   }
 
-  const calendar = moment(event.time);
+  const calendar = moment.utc(event.time + event.utc_offset);
   if (!calendar.isValid()) {
     return '';
   }
