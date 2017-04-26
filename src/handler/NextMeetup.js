@@ -1,6 +1,6 @@
 
 import Meetup from '../utils/Meetup';
-import { generateEventTitle, generateEventStart } from '../utils/Speech';
+import { improveSpeechOutput, generateEventTitle, generateEventStart } from '../utils/Speech';
 
 const MEETUP_ACCESS_KEY = process.env.MEETUP_ACCESS_KEY;
 const MEETUP_GROUP_ID = process.env.MEETUP_GROUP_ID;
@@ -18,7 +18,7 @@ export default async function NextMeetup(request, response) {
       const start = generateEventStart(events[0]);
 
       response
-        .say(`Das nächste <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> ist ${title} ${start}`)
+        .say(improveSpeechOutput(`Das nächste Meetup ist ${title} ${start}`))
         .card({
           type: 'Simple',
           title: 'Nächstes Meetup',
@@ -26,7 +26,7 @@ export default async function NextMeetup(request, response) {
         })
         .send();
     } else {
-      response.say('Mir ist leider kein nächstes <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> bekannt.');
+      response.say(improveSpeechOutput('Mir ist leider kein nächstes Meetup bekannt.'));
     }
   } catch (e) {
     console.log('Exception:', e);

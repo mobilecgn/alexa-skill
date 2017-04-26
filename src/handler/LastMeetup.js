@@ -1,6 +1,6 @@
 
 import Meetup from '../utils/Meetup';
-import { generateEventTitle, generateEventStart } from '../utils/Speech';
+import { improveSpeechOutput, generateEventTitle, generateEventStart } from '../utils/Speech';
 
 const MEETUP_ACCESS_KEY = process.env.MEETUP_ACCESS_KEY;
 const MEETUP_GROUP_ID = process.env.MEETUP_GROUP_ID;
@@ -18,7 +18,7 @@ export default async function LastMeetup(request, response) {
       const start = generateEventStart(events[0]);
 
       response
-        .say(`Das letzte <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> war ${title} ${start}`)
+        .say(improveSpeechOutput(`Das letzte Meetup war ${title} ${start}`))
         .card({
           type: 'Simple',
           title: 'Letzte Meetup',
@@ -26,7 +26,7 @@ export default async function LastMeetup(request, response) {
         })
         .send();
     } else {
-      response.say('Mir ist leider kein vergangenes <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> bekannt.');
+      response.say(improveSpeechOutput('Mir ist leider kein vergangenes Meetup bekannt.'));
     }
   } catch (e) {
     console.log('Exception:', e);

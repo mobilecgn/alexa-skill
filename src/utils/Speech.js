@@ -3,6 +3,15 @@ import moment from 'moment';
 
 moment.locale('de');
 
+export function improveSpeechOutput(input) {
+  let output = input;
+
+  output = output.replace(/Meetup/ig, '<phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme>');
+  output = output.replace(/Hackathon/ig, '<phoneme alphabet="ipa" ph="ˈhɛkatɔn">Hackathon</phoneme>');
+
+  return output;
+}
+
 export function generateEventTitle(event) {
   if (!event || !event.name) {
     return '';

@@ -1,4 +1,6 @@
 
+import { improveSpeechOutput } from '../utils/Speech';
+
 export default function HelpIntent(request, response) {
-  response.reprompt('Frag\' mich zum Beispiel, wann das nächste <phoneme alphabet="ipa" ph="miːt ʌp">Meetup</phoneme> stattfindet.');
+  response.reprompt(improveSpeechOutput('Frag\' mich zum Beispiel, wann das nächste Meetup stattfindet.'));
 }
